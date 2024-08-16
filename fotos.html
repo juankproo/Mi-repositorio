@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webleb</title>
+    <link rel="stylesheet" href="./css/fotos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body style="background-color: black;">
+    <div class="titulo">
+        <h1>III Feria de Emprendimiento</h1>
+    </div>
+    <div class="slider" x-data="{start: true, end: false}">
+        <div class="slider__content" x-ref="slider"
+            x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
+            <div class="slider__item">
+                <img class="slider__image" src="./img/FERIA/FERIA JUAN/Img/1.JPG" alt="Image">
+                <div class="slider__info">
+                    <h2>VELAS ENCANTADAS</h2>
+                    <h3>Productos 100% hechos a mano</h3>
+                </div>
+            </div>
+            <div class="slider__item">
+                <img class="slider__image" src="./img/FERIA/FERIA JUAN/Img/adso.JPG" alt="Image">
+                <div class="slider__info">
+                    <h2>EMPRENDIMIENTO DE MANILLAS</h2>
+                    <h3>Creatividad con los aprendices del Sena Yamboró</h3>
+                </div>
+            </div>
+            <div class="slider__item">
+                <img class="slider__image" src="./img/FERIA/FERIA JUAN/Img/2.JPG" alt="Image">
+                <div class="slider__info">
+                    <h2>EMPRENDIMIENTO EN CROCHET</h2>
+                    <h3>Conoce a los diferentes modelos de crochet</h3>
+                </div>
+            </div>
+            <div class="slider__item">
+                <img class="slider__image" src="./img/FERIA/FERIA JUAN/Img/4.JPG" alt="Image">
+                <div class="slider__info">
+                    <h2>CAKE SHOP DAI</h2>
+                    <h3>Ricos postres para endulzar tu paladar</h3>
+                </div>
+            </div>
+            <div class="slider__item">
+                <img class="slider__image" src="./img/FERIA/FERIA JUAN/Img/5.JPG" alt="Image">
+                <div class="slider__info">
+                    <h2>YOGURT ARTESANAL CON GELATINA</h2>
+                    <h3>Dejate consentir probando un rico yogurt con gelatina 100% echos a mano</h3>
+                </div>
+            </div>
+            <div class="slider__item">
+                <img class="slider__image" src="./img/FERIA/FERIA JUAN/Img/francia.JPG" alt="Image">
+                <div class="slider__info">
+                    <h2>COLLARES ARTESANALES</h2>
+                    <h3>Decora tu cuerpo con diversas formas de collares artesanales</h3>
+                </div>
+            </div>
+            <div class="slider__item">
+                <img class="slider__image" src="./img/FERIA/FERIA JUAN/Img/Café.JPG" alt="Image">
+                <div class="slider__info">
+                    <h2>ESCUELA NACIONAL DE LA CALLIDAD DEL CAFÉ</h2>
+                    <h3> La Escuela Nacional de la Calidad del Café es una institución que se dedica a la formación y
+                        capacitación en temas relacionados con la producción de café de alta calidad. Ofrece programas
+                        educativos y cursos especializados para productores, tostadores, catadores y otros profesionales
+                        del sector cafetalero.</h3>
+                </div>
+            </div>
+        </div>
+        <div class="slider__nav" style="display: flex;justify-content: center;">
+            <button class="slider__nav__button"
+                x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth * -1, behavior: 'smooth'});"
+                x-bind:class="start ? '' : 'slider__nav__button--active'">Atras</button>
+            <button class="slider__nav__button"
+                x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth, behavior: 'smooth'});"
+                x-bind:class="end ? '' : 'slider__nav__button--active'">Siguiente</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="videoContainer" class="row mt-4">
+            <!-- Video 1 -->
+            <div class="col-sm-6 mt-4 " >
+                <div class="card align-items-center" style="background-color: teal;">
+                    <video controls autoplay muted class="w-75 mt-4">
+                        <source src="./img/final/video/1.MOV" type="video/mp4">
+                        El navegador no soporta la etiqueta video.
+                    </video>
+                    <div class="card-body">
+                        <h5 class="card-title">Título del Video 1</h5>
+                        <p class="card-text">Descripción del Video 1</p>
+                        <button class="btn btn-primary" onclick="Megusta('video1')">
+                            Me gusta <span id="gusta_video1">(0)</span>
+                        </button>
+                        <button class="btn btn-danger" onclick="noMegusta('video1')">
+                            No me gusta <span id="noGusta_video1">(0)</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="col-sm-6 mt-4" >
+                <div class="card align-items-center" style="background-color: teal;">
+                    <video controls autoplay muted class="w-75 mt-4">
+                        <source src="./img/2. primera pagina/video/trabajo recuperado sena.mp4" type="video/mp4">
+                        El navegador no soporta la etiqueta video.
+                    </video>
+                    <div class="card-body">
+                        <h5 class="card-title">Título del Video 2</h5>
+                        <p class="card-text">Descripción del Video 2</p>
+                        <button class="btn btn-primary" onclick="Megusta('video2')">
+                            Me gusta <span id="gusta_video2">(0)</span>
+                        </button>
+                        <button class="btn btn-danger" onclick="noMegusta('video2')">
+                            No me gusta <span id="noGusta_video2">(0)</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Video 3 -->
+            <div class="col-sm-6 mt-4">
+                <div class="card align-items-center" style="background-color: teal;">
+                    <video controls autoplay muted class="w-75 mt-4">
+                        <source src="./img/LOGIN/Videos/este si 2.mov" type="video/mp4">
+                        El navegador no soporta la etiqueta video.
+                    </video>
+                    <div class="card-body">
+                        <h5 class="card-title">Título del Video 3</h5>
+                        <p class="card-text">Descripción del Video 3</p>
+                        <button class="btn btn-primary" onclick="Megusta('video3')">
+                            Me gusta <span id="gusta_video3">(0)</span>
+                        </button>
+                        <button class="btn btn-danger" onclick="noMegusta('video3')">
+                            No me gusta <span id="noGusta_video3">(0)</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video 4 -->
+            <div class="col-sm-6 mt-4">
+                <div class="card align-items-center" style="background-color: teal;">
+                    <video controls autoplay muted class="w-75 mt-4">
+                        <source src="./img/LOGIN/Videos/Pelicula Juan  Andrés.mov" type="video/mp4">
+                        El navegador no soporta la etiqueta video.
+                    </video>
+                    <div class="card-body">
+                        <h5 class="card-title">Título del Video 4</h5>
+                        <p class="card-text">Descripción del Video 4</p>
+                        <button class="btn btn-primary" onclick="Megusta('video4')">
+                            Me gusta <span id="gusta_video4">(0)</span>
+                        </button>
+                        <button class="btn btn-danger" onclick="noMegusta('video4')">
+                            No me gusta <span id="noGusta_video4">(0)</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.2/cdn.js"></script>
+    <script src="./js/galeria.js"></script>
+</body>
+
+</html>

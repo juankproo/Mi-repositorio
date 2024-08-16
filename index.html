@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Portafolio</title>
+</head>
+
+<body>
+    <header class="header">
+
+
+        <a href="#home" class="logo">Portafolio
+            <span>De Servicios</span>
+            <i class='bx bx-menu' id="menu-icon"></i>
+        </a>
+        <nav class="navbar">
+            <a href="#home" class="active">Principal</a>
+            <a href="./fotos.html">Galeria</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#hability">Habilidades</a>
+            <a href="./proyectos.html">Proyectos</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+
+
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hola , soy <span>Juan Andres Artunduaga</span></h1>
+            <h3 class="text-animation">Me dedico a <span></span></h3>
+            <p>Soy un profesional apasionado por la creación de contenido multimedia, especializado en tres áreas clave: producción de video, producción de fotografía profesional y edición de audio.</p>
+
+            <div class="social-icons">
+                <a href="https://www.instagram.com/juan_artunduaga8?igsh=M3NqZnFuZDgyaXJ5&utm_source=qr" <i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://web.facebook.com/profile.php?id=100008702370466&mibextid=LQQJ4d&_rdc=1&_rdr" <i class='bx bxl-facebook'></i></a>
+
+            </div>
+            <div class="btn-group">
+                <a href="https://www.instagram.com/juan_artunduaga8?igsh=M3NqZnFuZDgyaXJ5&utm_source=qr" class="btn">Sigueme</a>
+                <a href="./perfil.html" class="btn">Contáctame</a>
+                <a href="#"></a>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="Servicios" id="servicios">
+        <div class="container">
+            <h2>Servicios</h2>
+            <div class="service">
+                <h3>Producción de Video</h3>
+                <p>En producción de video, ofrezco servicios que abarcan desde la conceptualización y guionización hasta la edición y postproducción, asegurando que cada proyecto cuente una historia única y cautivadora.</p>
+                <video autoplay muted loop controls>
+                    <source src="./img/final/video/1.MOV" class="d-block w-90"
+                        type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="service1">
+            <h3 class="btn-title">Fotografía Profesional</h3>
+            <p>En producción de fotografía profesional, capturo momentos y emociones con precisión y creatividad, utilizando técnicas avanzadas y equipos de alta calidad para obtener imágenes impactantes y memorables.</p>
+        </div>
+        <div class="service2">
+            <h3 class="btn-title">Edición de Audio</h3>
+            <p>En diseño de audio, me enfoco en crear paisajes sonoros que complementen y enriquezcan cada proyecto visual, desde la grabación y edición de sonido hasta la mezcla y masterización, garantizando una experiencia auditiva envolvente y profesional.</p></br>
+            <a center href="./img/PORTAFOLIO JUAN/IMG/portafolio.pdf" class="boton-port" target="_blank">PORTAFOLIO DE SERVICIOS</a>
+
+        </div>
+        </div>
+    </section>
+
+    <section id="hability">
+        <div class="container">
+            <h2>Habilidades</h2>
+            <div class="habilidadespros">
+                <li>Programas de edición de video y audio: Adobe Premiere Pro, Final Cut Pro, Audition, etc.</li>
+                <li>Herramientas de diseño gráfico y web: Adobe Creative Suite (Photoshop, Illustrator, etc.), Sketch,
+                    Figma, etc.</li>
+                <li>Lenguajes de programación: HTML, CSS, JavaScript, etc.</li>
+                <li>Fotografía.</li>
+            </div>
+            <div class="imgs">
+                <img class="loght" src="./IMG/1000_F_527977463_hcQAYoMqDE17JUYji9J9bVIV6CWMsFuG.jpg" alt="html,css,js">
+                <img src="./IMG/97f5f4dfe6df84d78caacff68ec63538.png" alt="final cut pro">
+                <img src="./IMG/Adobe_Premiere_Pro_CC_icon.svg.png" alt="adove premier pro">
+                <img src="./IMG/Figma-logo.svg" alt="figma">
+                <img src="./IMG/adobeauditionicon_84149.webp" alt="au">
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="form-contact">
+            <form class="form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" required="">
+                </div>
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required="">
+                </div>
+                <div class="form-group">
+                    <label for="textarea">Deja tu mensaje</label>
+                    <input name="textarea" id="textarea" rows="10" cols="50" required="" />
+                </div>
+                <div class="button">
+                    <button class="form-submit-btn" type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white text-center">
+        <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

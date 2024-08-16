@@ -1,0 +1,173 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #222727;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card-container {
+    perspective: 1000px;
+    /* For a subtle 3D effect on hover */
+}
+
+.card-bio{
+    margin-left: 50px;
+}
+
+.card {
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.card-1{
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.card-1:hover {
+    transform: rotateZ(5deg);
+}
+
+.card:hover {
+    transform: rotateY(10deg);
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 30px;
+    /* Half outside the card */
+    border: 5px solid #303537;
+    /* Creates a nice border effect */
+}
+
+.info {
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+.nombre {
+    color: white;
+    margin: 10px 0;
+}
+
+p {
+    color: #ffffff;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+}
+
+.social-icons a {
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+/* nombre */
+
+.titulo {
+    font: 400 50px/1 courier;
+    white-space: nowrap;
+    color: whitesmoke;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+span {
+    display: inline-block;
+    animation: stretch 2.5s cubic-bezier(0.4, 1.4, 0.75, 0.9) infinite;
+    transform-origin: center;
+    transform-origin: left center;
+}
+
+span:nth-of-type(1) {
+    animation-delay: 0.25s;
+}
+
+span:nth-of-type(2) {
+    animation-delay: 0.5s;
+}
+
+span:nth-of-type(3) {
+    animation-delay: 0.75s;
+}
+
+span:nth-of-type(4) {
+    animation-delay: 1s;
+}
+
+span:nth-of-type(5) {
+    animation-delay: 1.25s;
+}
+
+span:nth-of-type(6) {
+    animation-delay: 1.5s;
+}
+
+span:nth-of-type(7) {
+    animation-delay: 1.75s;
+}
+
+span:nth-of-type(8) {
+    animation-delay: 2s;
+}
+
+span:nth-of-type(9) {
+    animation-delay: 2.25s;
+}
+
+span:nth-of-type(10) {
+    animation-delay: 2.5s;
+}
+
+@keyframes stretch {
+    5% {
+        transform: scaleX(2000);
+        opacity: 0.1;
+    }
+
+    15% {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
