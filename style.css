@@ -428,8 +428,8 @@ section h2 {
 }
 
 .imgs .loght{
-    width: 85px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
 }
 /* Ajustes finales para asegurar consistencia en todos los navegadores */
 @media (max-width: 768px) {
