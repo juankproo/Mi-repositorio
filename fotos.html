@@ -12,6 +12,24 @@
 </head>
 
 <body style="background-color: black;">
+
+    <header class="header">
+
+
+        <a href="./index.html" class="logo">Portafolio
+            <span>De Servicios</span>
+            <i class='bx bx-menu' id="menu-icon"></i>
+        </a>
+        <nav class="navbar">
+            <a href="./index.html" >Principal</a>
+            <a href="./fotos.html" class="active">Galeria</a>
+            <a href="./proyectos.html">Proyectos</a>
+            <a href="./perfil.html">Contacto</a>
+        </nav>
+
+
+    </header>
+
     <div class="titulo">
         <h1>III Feria de Emprendimiento</h1>
     </div>
@@ -70,6 +88,27 @@
                         del sector cafetalero.</h3>
                 </div>
             </div>
+            <div class="slider__item">
+                <img class="slider__image" src="./img/FERIA/FERIA JUAN/Img/Imagen de WhatsApp 2024-08-20 a las 13.26.55_1a2a674f.jpg" alt="Image">
+                <div class="slider__info">
+                    <h2>FERIA DE EMPRENDIMIENTO</h2>
+                    <h3> Comiendo con los panas.</h3>
+                </div>
+            </div>
+            <div class="slider__item">
+                <img class="slider__image" src="./img/FERIA/FERIA JUAN/Img/Imagen de WhatsApp 2024-08-20 a las 13.26.55_23cff5c5.jpg" alt="Image">
+                <div class="slider__info">
+                    <h2>VENTA DE ROPA</h2>
+                    <h3>La venta de ropa es un buen inicio para probar suerte con el emprendimiento de montar un negocio de marcas de ropa.</h3>
+                </div>
+            </div>
+            <div class="slider__item">
+                <img class="slider__image" src="./img/FERIA/FERIA JUAN/Img/Imagen de WhatsApp 2024-08-20 a las 13.26.55_3b78b8e2.jpg" alt="Image">
+                <div class="slider__info">
+                    <h2>ACCESORIOS PARA DAMA</h2>
+                    <h3>Se influye la venta de accesorios para dama.</h3>
+                </div>
+            </div>
         </div>
         <div class="slider__nav" style="display: flex;justify-content: center;">
             <button class="slider__nav__button"
@@ -91,7 +130,7 @@
                         El navegador no soporta la etiqueta video.
                     </video>
                     <div class="card-body">
-                        <h5 class="card-title">Título del Video 1</h5>
+                        <h5 class="card-title">Paseo en el mar</h5>
                         <p class="card-text">Descripción del Video 1</p>
                         <button class="btn btn-primary" onclick="Megusta('video1')">
                             Me gusta <span id="gusta_video1">(0)</span>
@@ -111,7 +150,7 @@
                         El navegador no soporta la etiqueta video.
                     </video>
                     <div class="card-body">
-                        <h5 class="card-title">Título del Video 2</h5>
+                        <h5 class="card-title">Grabando las vistas</h5>
                         <p class="card-text">Descripción del Video 2</p>
                         <button class="btn btn-primary" onclick="Megusta('video2')">
                             Me gusta <span id="gusta_video2">(0)</span>
@@ -130,7 +169,7 @@
                         El navegador no soporta la etiqueta video.
                     </video>
                     <div class="card-body">
-                        <h5 class="card-title">Título del Video 3</h5>
+                        <h5 class="card-title">Grabando pelicula</h5>
                         <p class="card-text">Descripción del Video 3</p>
                         <button class="btn btn-primary" onclick="Megusta('video3')">
                             Me gusta <span id="gusta_video3">(0)</span>
@@ -141,9 +180,31 @@
                     </div>
                 </div>
             </div>
-
+            <!-- Video 4 -->
+            <div class="col-sm-6 mt-4">
+                <div class="card align-items-center" style="background-color: teal;">
+                    <video controls autoplay muted class="w-75 mt-4">
+                        <source src="./img/Video de WhatsApp 2024-08-20 a las 13.26.53_a2c64302.mp4" type="video/mp4">
+                        El navegador no soporta la etiqueta video.
+                    </video>
+                    <div class="card-body">
+                        <h5 class="card-title">Mi familia</h5>
+                        <p class="card-text">Descripción del Video 4</p>
+                        <button class="btn btn-primary" onclick="Megusta('video4')">
+                            Me gusta <span id="gusta_video4">(0)</span>
+                        </button>
+                        <button class="btn btn-danger" onclick="noMegusta('video4')">
+                            No me gusta <span id="noGusta_video4">(0)</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+        <!-- Footer -->
+        <footer class="py-4 bg-dark text-white text-center">
+            <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+        </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.2/cdn.js"></script>
     <script src="./js/galeria.js"></script>
 </body>

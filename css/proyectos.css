@@ -317,3 +317,32 @@ display: inline-block;
         opacity: 1;
     }
 }
+
+/* boton */
+
+.buton-2{
+    justify-content: end;
+    display: flex;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.button2{
+    background-color: indigo;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+}
+
+.regresar-2{
+    text-decoration: none;
+    color: white;
+}
+
+/* footer */
+footer {
+    background: #111;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1rem;
+}

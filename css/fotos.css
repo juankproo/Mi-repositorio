@@ -1,6 +1,16 @@
 :root {
     --scrollcolor: #fff;
     --scrollbackground: #141e27;
+    --bg-color: #080808;
+    --second-bg-color: #131313;
+    --text-color: white;
+    --main-color: #00ffee;
+    --clr-primary: teal;
+    --clr-secondary: crimson;
+    --bg-primary: #0d1a2d;
+    --bg-secondary: #14273e;
+    --text-primary: #fff;
+    --text-secondary: #ccc;
 }
 
 * {
@@ -14,8 +24,57 @@ body {
     height: 100vh;
 }
 
-body {
-    background: #203239;
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 12% 1rem;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+
+.logo {
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    color: var(--main-color);
+}
+
+.logo span {
+    text-shadow: 0 0 25px var(--main-color);
+}
+
+.navbar a {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-left: 3rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+#menu-icon {
+    font-size: 2.5rem;
+    color: var(--main-color);
+    display: none;
 }
 
 .titulo {
@@ -23,7 +82,7 @@ body {
     justify-content: center;
     align-items: center;
     display: flex;
-    margin: 0;
+    margin-top: 150px;
 }
 
 .title {
@@ -172,4 +231,18 @@ body {
 
 .card-body{
     color: white;
+}
+
+
+
+/* footer */
+footer {
+    background: #111;
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 1rem;
 }
