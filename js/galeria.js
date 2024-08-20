@@ -54,7 +54,7 @@ const noMegusta = (videoId) => {
 
 // Función para mostrar los contadores iniciales cuando la página se carga
 document.addEventListener('DOMContentLoaded', function() {
-    const videoIds = ['video1', 'video2', 'video3', 'video4', 'video5', 'video6'];
+    const videoIds = ['video1', 'video2', 'video3', 'video4'];
     
     videoIds.forEach(videoId => {
         initAndShowLikes(videoId);
