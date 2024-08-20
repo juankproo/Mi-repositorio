@@ -77,6 +77,27 @@ body {
     display: none;
 }
 
+
+.navbar {
+    display: none;
+}
+
+
+#menu-icon {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        display: flex;
+    }
+
+    #menu-icon {
+        display: none;
+    }
+}
+
+
 .titulo {
     color: white;
     justify-content: center;

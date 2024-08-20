@@ -61,3 +61,13 @@ document.addEventListener('DOMContentLoaded', function() {
         initAndShowDislikes(videoId);
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const menuIcon = document.getElementById('menu-icon');
+    const navbar = document.querySelector('.navbar');
+
+    menuIcon.addEventListener('click', () => {
+        navbar.style.display = navbar.style.display === 'block' ? 'none' : 'block';
+    });
+});
