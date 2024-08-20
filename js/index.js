@@ -3,6 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     var navbar = document.querySelector('.navbar');
 
     menuIcon.addEventListener('click', function() {
-        navbar.classList.toggle('active'); // Agrega o remueve la clase 'active'
+        navbar.classList.toggle('active');
     });
 });
