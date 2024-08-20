@@ -64,10 +64,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    const menuIcon = document.getElementById('menu-icon');
-    const navbar = document.querySelector('.navbar');
+    var menuIcon = document.getElementById('menu-icon');
+    var navbar = document.querySelector('.navbar');
 
-    menuIcon.addEventListener('click', () => {
-        navbar.style.display = navbar.style.display === 'block' ? 'none' : 'block';
+    menuIcon.addEventListener('click', function() {
+        navbar.classList.toggle('active');
     });
 });

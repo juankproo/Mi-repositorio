@@ -32,7 +32,6 @@ body {
 }
 
 
-/* Estilos existentes */
 .header {
     position: fixed;
     top: 0;
@@ -116,6 +115,8 @@ body {
 
     #menu-icon {
         display: block;
+        margin-left: 250px;
+        margin-top: -60px;
     }
 }
 
